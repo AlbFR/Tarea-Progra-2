@@ -2,10 +2,7 @@ import java.util.Date;
 
 class OrdenCompra {
     private Date fecha;
-    private Srting estado;
+    private String estado;
+    private final DetalleOrden;
     public OrdenCompra () {}
-    public float calcPrecioSinIVA () {}
-    public float calcIVA () {}
-    public float calcPrecio () {}
-    public float calcPeso () {}
 }
