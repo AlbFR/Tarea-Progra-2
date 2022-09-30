@@ -6,10 +6,6 @@ class OrdenCompra {
     private Cliente cliente;
     private Pago pago;
     private DocTributario docTributario;
-    
+
     public OrdenCompra () {}
-    public float calcPrecioSinIVA () {}
-    public float calcIVA () {}
-    public float calcPrecio () {}
-    public float calcPeso () {}
 }
