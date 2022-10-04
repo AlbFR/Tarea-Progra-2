@@ -1,14 +1,26 @@
-import java.util.Date;
-
 package tarea.progra.pkg2;
+import java.util.Calendar;
 
 abstract class Pago {
     private float monto;
-    private Date fecha;
+    private Calendar fecha;
+    
+    public Pago(int cash){
+        monto = cash;
+    }
+    public float getMonto() {
+        return monto;
+    }
 }
 
 class Efectivo extends Pago{
-    public calcDevolucion(){}
+    private OrdenCompra ordenCompra;
+    public Efectivo(int a){
+        super(a);
+    }
+    public int calcDevolucion(OrdenCompra cost){
+        return cost.calcPrecio() - super.getMonto();
+    }
 }
 
 class Transferencia extends Pago{

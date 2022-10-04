@@ -1,3 +1,4 @@
+//Ready!
 package tarea.progra.pkg2;
 public class Articulo {
     private float peso;
