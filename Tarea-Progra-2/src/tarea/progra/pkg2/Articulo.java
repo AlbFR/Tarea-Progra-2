@@ -5,11 +5,11 @@ public class Articulo {
     private String nombre;
     private String descripcion;
     private float precio;
-    public Articulo (float clp, String name, String data, float cash) {
-        peso = clp;
+    public Articulo (float weight, String name, String data, float price) {
+        peso = weight;
         nombre = name;
         descripcion = data;
-        precio = cash;
+        precio = price;
     }
 
     public float getPeso() {
@@ -24,5 +24,16 @@ public class Articulo {
     public float getPrecio() {
         return precio;
     }
-    
+    public String toString () {
+        String r = "name: ";
+        r += getNombre();
+        r += ", precio: ";
+        r += getPrecio();
+        r += ", peso: ";
+        r += getPeso();
+        r += ", desc: ";
+        r += getDescripcion();
+        r += "\n";
+        return r;
+    }
 }

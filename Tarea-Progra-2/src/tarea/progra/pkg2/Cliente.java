@@ -15,9 +15,19 @@ public class Cliente {
         return direccion;
     }
         
-    public void Cliente(String a, String b, Direccion c){
+    public Cliente(String a, String b, Direccion c){
         nombre = a;
         rut = b;
         direccion = c;
+    }
+    public String toString () {
+        String r = "Nombre: ";
+        r += nombre;
+        r += "Rut: ";
+        r += rut;
+        r += "direccion: ";
+        r += direccion.getDireccion();
+        r += "\n";
+        return r;
     }
 }
